@@ -1,0 +1,113 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "zbtp.day5activityroutingmicah",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.2",
+      "toolsId": "85ad1492-2370-407c-b21c-e851672d8cd5"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.111.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "zbtp.day5activityroutingmicah.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "zbtp.day5activityroutingmicah.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteNavigation",
+          "pattern": ":?query:",
+          "target": [
+            "TargetNavigation"
+          ]
+        },{
+          "name": "Details",
+          "pattern": "Details/{Param1}/{Param2}",
+          "target": ["Details"]
+        }
+      ],
+      "targets": {
+        "TargetNavigation": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Navigation",
+          "viewName": "Navigation"
+        },
+        "Details": {
+          "viewType": "XML",
+          "viewName": "Details"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "zbtp.day5activityroutingmicah.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}
