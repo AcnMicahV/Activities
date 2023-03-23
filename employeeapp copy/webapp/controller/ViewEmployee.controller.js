@@ -8,13 +8,10 @@ sap.ui.define([
     function (Controller, JSONModel) {
         "use strict";
 
-        return Controller.extend("sapips.training.employeeapp.controller.EmployeeList", {
+        return Controller.extend("sapips.training.employeeapp.controller.ViewEmployee", {
             onInit: function () {
 
-            },
-
-            onAdd: function() {
-                var oView = this.getView();
             }
+
         });
     });

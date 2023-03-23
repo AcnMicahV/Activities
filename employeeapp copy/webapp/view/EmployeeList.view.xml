@@ -3,11 +3,8 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <Table id="idEmployeesTable" inset="false" mode="MultiSelect" class="sapUiResponsiveMargin" width="auto"
-                items="{ path: 'EmployeesList>/Employee',
-                         parameters: { 
-                             expand: 'CareerList, ProjectList'
-                         },
-			             sorter: { path: 'EmployeeID' } }">
+                items="{ path: '/EmployeesList',
+			             sorter: { path: 'Name' } }">
                 <headerToolbar>
                     <OverflowToolbar>
                         <Title text="Employees" level="H2" />
@@ -44,19 +41,15 @@
                         <Text text="{i18n>CareerLevel}" />
                     </Column>
                     <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
-                        <Text text="{i18n>CurrentProject}" />
+                        <Text text="{i18n>CurrProj}" />
                     </Column>
                 </columns>
                 <items>
-                    <ColumnListItem vAlign="Middle" type="Navigation" press="onSelect">
+                    <ColumnListItem vAlign="Middle">
                         <cells>
-                            <ObjectIdentifier text="{EmployeesList>EmployeeID}" />
-                            <Text text="{EmployeesList>FirstName}"/>
-                            <Text text="{EmployeesList>LastName}" />
-                            <Text text="{EmployeesList>Age}" />
-                            <Text text="{EmployeesList>DateHire}" />
-                            <Text text="{EmployeesList>CareerList/CareerLevel}" />
-                            <Text text="{EmployeesList>ProjectList/ProjectID}" />
+                            <ObjectIdentifier title="{Name}" text="{ProductId}" />
+                            <Text text="{SupplierName}" />
+                            <Text text="{Width} x {Depth} x {Height} {DimUnit}" />
                         </cells>
                     </ColumnListItem>
                 </items>

@@ -26,7 +26,7 @@ function (Controller) {
                 "Discontinued": false,
                 "SupplierID": 2468
             };
-
+            //Products is the folder from localService because it is where the data should be saved
             oView.create("/Products", oData);
 
         }

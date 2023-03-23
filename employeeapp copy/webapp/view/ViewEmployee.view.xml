@@ -2,7 +2,7 @@
     displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
-            <!-- <ObjectPageHeader id="headerForTest"
+            <ObjectPageHeader id="headerForTest"
 							  objectTitle="{i18n>LastName}"
 							  objectSubtitle="{i18n>CareerLevel">
 				<actions>
@@ -19,25 +19,7 @@
 						<m:Link text="Page 2 long link" press="handleLink2Press"/>
 					</m:Breadcrumbs>
 				</breadcrumbs>
-			</ObjectPageHeader> -->
-			<Panel id="idPanel1" headerText="Product Details" class="sapUiResponsiveMargin" width="auto">
-                <f:SimpleForm id="headerForTest">
-                    <Label text="EID" />
-                    <Input value="{Employee>EmployeeID}" />
-                    <Label text="FirstName" />
-                    <Input value="{{Employee>FirstName}" />
-                    <Label text="LastName" />
-                    <Input value="{{Employee>LastName}" />
-                    <Label text="Age" />
-                    <Input value="{{Employee>Age}" />
-                    <Label text="DateHire" />
-                    <Input value="{{Employee>DateHire}" />
-                    <Label text="CareerLevel" />
-                    <Input value="{{Employee>CareerLevel}" />
-					<Label text="CurrentProject" />
-                    <Input value="{{Employee>CurrentProject}" />
-                </f:SimpleForm>
-            </Panel>
+			</ObjectPageHeader>
         </content>
     </Page>
 </mvc:View>

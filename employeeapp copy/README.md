@@ -1,13 +1,13 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Tue Mar 21 2023 17:12:53 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Wed Mar 22 2023 07:26:44 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.9.2|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>simple|
-|**Service Type**<br>None|
-|**Service URL**<br>N/A
+|**Service Type**<br>OData Url|
+|**Service URL**<br>https://services.odata.org/v2/northwind/northwind.svc/
 |**Module Name**<br>employeeapp|
 |**Application Title**<br>Employee App|
 |**Namespace**<br>sapips.training|
@@ -27,6 +27,12 @@ A Fiori application.
 
 ```
     npm start
+```
+
+- It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
+
+```
+    npm run start-mock
 ```
 
 #### Pre-requisites:

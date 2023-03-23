@@ -69,10 +69,14 @@
           "bundleName": "sapips.training.employeeapp.i18n.i18n"
         }
       },
-      "": {
+      "EmployeesList": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "Employees": {
+        "type": "",
+        "uri": "localService/data/Employee.json"
       }
     },
     "resources": {
@@ -100,10 +104,17 @@
             "TargetEmployeeList"
           ]
         },{
-          "name": "CreateEmployee",
+          "name": "RouteCreateEmployee",
           "pattern": "CreateEmployee",
           "target": [
             "CreateEmployee"
+          ]
+        },
+        {
+          "name": "RouteViewEmployee",
+          "pattern": "ViewEmployee",
+          "target": [
+            "ViewEmployee"
           ]
         }
       ],
@@ -118,6 +129,10 @@
         "CreateEmployee" : {
           "viewType" : "XML",
           "viewName" : "CreateEmployee"
+        },
+        "ViewEmployee" : {
+          "viewType" : "XML",
+          "viewName" : "ViewEmployee"
         }
       }
     },

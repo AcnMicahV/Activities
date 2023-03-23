@@ -11,7 +11,7 @@
                 </f:toolbar>
                 <f:content>
                     <Label id="LEID" text="{i18n>EID}" />
-                    <Input id="IEID" value="" enabled="false"/>
+                    <Input id="IEID" value="" />
                     <Label id="LFName" text="{i18n>FirstName}" required="true" />
                     <Input id="IFName" value="" />
                     <Label id="LLName" text="{i18n>LastName}" required="true" />
@@ -19,7 +19,7 @@
                     <Label id="LAge" text="{i18n>Age}" required="true" />
                     <Input id="IAge" value="" />
                     <Label id="LDHire" text="{i18n>DateHire}" required="true" />
-                    <DatePicker id="IDHire" placeholder="Enter Date" change="handleChange"
+                    <DatePicker id="LDHire" placeholder="Enter Date" change="handleChange"
                         class="sapUiSmallMarginBottom" />
                     <Label
                         text="DatePicker with OK button in the footer and initialFocusedDateValue new Date(2017, 5, 13)"

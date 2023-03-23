@@ -1,24 +1,41 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
     "sap/m/MessageBox"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, JSONModel, MessageBox) {
+    function (Controller, MessageBox) {
         "use strict";
 
         return Controller.extend("sapips.training.employeeapp.controller.EmployeeList", {
             onInit: function () {
+                
+            },
+
+            onSelect: function(oEvent){
+                //Get the control list
+                var oList = oEvent.getSource();
+
+                //Get the selected item
+                // var oSelItem = oList.getSelectedItem();
+
+                //Get the context binding path
+                // var sSelItemPath = oSelItem.getBindingContextPath();
+                var sSelItemPath = oList.getBindingContextPath();
+
+                //Bind the selected item to the control
+                var oForm = this.getView().byId("headerForTest");
+
+                oForm.bindElement({
+                    path: sSelItemPath,
+                    model: "Employee"
+                })
 
             },
 
             onAdd: function() {
-                var oView = this.getView();
-
-                this.getRouter().navTo("CreateEmployee");
-
+                this.getRouter().navTo("RouteCreateEmployee");
             },
 
             onDelete: function() {

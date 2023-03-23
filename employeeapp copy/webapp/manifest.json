@@ -13,7 +13,18 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.9.2",
-      "toolsId": "e8cbd03a-9836-40eb-a82a-372a65f662f2"
+      "toolsId": "8f8f292e-af0a-4323-9c52-5f0072369b8e"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/v2/northwind/northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -57,6 +68,11 @@
         "settings": {
           "bundleName": "sapips.training.employeeapp.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
       }
     },
     "resources": {
@@ -83,6 +99,12 @@
           "target": [
             "TargetEmployeeList"
           ]
+        },{
+          "name": "CreateEmployee",
+          "pattern": "CreateEmployee",
+          "target": [
+            "CreateEmployee"
+          ]
         }
       ],
       "targets": {
@@ -92,6 +114,10 @@
           "clearControlAggregation": false,
           "viewId": "EmployeeList",
           "viewName": "EmployeeList"
+        },
+        "CreateEmployee" : {
+          "viewType" : "XML",
+          "viewName" : "CreateEmployee"
         }
       }
     },
