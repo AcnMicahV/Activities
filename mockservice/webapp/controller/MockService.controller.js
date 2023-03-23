@@ -1,44 +1,35 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
-    "sap/ui/model/json/JSONModel",
-],
+        "sap/ui/core/mvc/Controller"
+    ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, MessageToast, JSONModel) {
+    function (Controller) {
         "use strict";
 
         return Controller.extend("sapips.training.mockservice.controller.MockService", {
             onInit: function () {
-                var oProducts = new JSONModel();
+             
             },
 
-            onSelectProduct: function(oEvent) {
-                //Get the Control (List)
-                var oList = oEvent.getSource();
+            onAdd: function () {
+                var oView = this.getOwnerComponent().getModel("ProductsModel");
 
-                //Get the selected item
-                var oSelItem = oList.getSelectedItem();
+                var oData = {
+                    "ProductID": 999,
+                    "ProductName": "myProduct",
+                    "QuantityPerUnit": "QuantityPerUnit999",
+                    "UnitPrice": 123456.789,
+                    "UnitsInStock": 123,
+                    "UnitsOnOrder": 456,
+                    "ReorderLevel": 789,
+                    "Discontinued": false,
+                    "SupplierID": 2468
+                };
 
-                //Get the context binding path
-                var sSelItemPath = oSelItem.getBindingContextPath();
+                oView.create("/ProductsModel", oData);
 
-                //Bind the selected item to the control (SimpleForm in Panel4)
-                var oForm = this.getView().byId("idProductDetails");
-
-                //Get the control to be used
-                oForm.bindElement({
-                    path: sSelItemPath,
-                    model: "ProductsModel"
-                })
-            },
-
-            onCreate: function() {
-                var oView = this.getView();
-                // MessageToast.show(evt.getSource().getId() + " Pressed");
-                MessageToast.show("Hello");
             }
-            
+
         });
     });

@@ -14,7 +14,17 @@ sap.ui.define([
             },
 
             onSave: function() {
+                var oView = this.getView();
+                var oModel = this.getOwnerComponent().getModel("ProductsModel");
 
+                var sEid = oView.byId("IEID").getValue();
+                var sFName = oView.byId("IFName").getValue();
+                var sLName = oView.byId("ILName").getValue();
+                var sDHire = oView.byId("IDHire").getValue();
+                var sCLevel = oView.byId("ICLevel").getSelectedKey();
+                var sCProj = oView.byId("ICProj").getSelectedKey();
+
+                oModel.create("/ProductsModel", oData);
             },
 
             onCancel: function() {

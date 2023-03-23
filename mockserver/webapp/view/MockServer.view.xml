@@ -1,4 +1,4 @@
-<mvc:View controllerName="sapips.training.mockservice.controller.MockService"
+<mvc:View controllerName="sapips.training.mockserver.controller.MockServer"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form">

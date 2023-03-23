@@ -1,7 +1,7 @@
 {
   "_version": "1.49.0",
   "sap.app": {
-    "id": "sapips.training.mockservice",
+    "id": "sapips.training.mockserver",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,16 +13,16 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.9.2",
-      "toolsId": "944e4e45-a042-4486-83b5-9ae830990e51"
+      "toolsId": "b02dca9a-0c0e-4afc-9fe8-2148ede9a95f"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/v4/northwind/northwind.svc/",
+        "uri": "/v2/northwind/northwind.svc/",
         "type": "OData",
         "settings": {
           "annotations": [],
           "localUri": "localService/metadata.xml",
-          "odataVersion": "4.0"
+          "odataVersion": "2.0"
         }
       }
     }
@@ -66,13 +66,13 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "sapips.training.mockservice.i18n.i18n"
+          "bundleName": "sapips.training.mockserver.i18n.i18n"
         }
       },
       "ProductsModel": {
         "dataSource": "mainService",
         "preload": true,
-        "settings": { }
+        "settings": {}
       }
     },
     "resources": {
@@ -87,32 +87,32 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "sapips.training.mockservice.view",
+        "viewPath": "sapips.training.mockserver.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteMockService",
+          "name": "RouteMockServer",
           "pattern": ":?query:",
           "target": [
-            "TargetMockService"
+            "TargetMockServer"
           ]
         }
       ],
       "targets": {
-        "TargetMockService": {
+        "TargetMockServer": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "MockService",
-          "viewName": "MockService"
+          "viewId": "MockServer",
+          "viewName": "MockServer"
         }
       }
     },
     "rootView": {
-      "viewName": "sapips.training.mockservice.view.App",
+      "viewName": "sapips.training.mockserver.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

@@ -19,23 +19,21 @@
                     <Label id="LAge" text="{i18n>Age}" required="true" />
                     <Input id="IAge" value="" />
                     <Label id="LDHire" text="{i18n>DateHire}" required="true" />
-                    <DatePicker id="DP1" placeholder="Enter Date" change="handleChange"
+                    <DatePicker id="LDHire" placeholder="Enter Date" change="handleChange"
                         class="sapUiSmallMarginBottom" />
                     <Label
                         text="DatePicker with OK button in the footer and initialFocusedDateValue new Date(2017, 5, 13)"
                         labelFor="DP8" />
                     <Label id="LCLevel" text="{i18n>CareerLevel}" required="true" />
-                    <ComboBox items="{
-					path: '/CareerLevel',
-					sorter: { path: 'text' }
-				}">
+                    <ComboBox items="{ path: '/CareerLevel',
+					                   sorter: { path: 'text' } }" 
+                              id="ICLevel" >
                         <core:Item key="{key}" text="{text}" />
                     </ComboBox>
                     <Label id="LCProj" text="{i18n>CurrProj}" required="true" />
-                    <ComboBox items="{
-					path: '/CurrentProj',
-					sorter: { path: 'text' }
-				}">
+                    <ComboBox items="{ path: '/CurrentProj',
+					                   sorter: { path: 'text' } }"
+                              id="ICProj" >
                         <core:Item key="{key}" text="{text}" />
                     </ComboBox>
                     
