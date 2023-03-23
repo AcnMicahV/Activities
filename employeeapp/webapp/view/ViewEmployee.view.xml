@@ -1,0 +1,25 @@
+<mvc:View controllerName="sapips.training.employeeapp.controller.ViewEmployee" xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <ObjectPageHeader id="headerForTest"
+							  objectTitle="{i18n>LastName}"
+							  objectSubtitle="{i18n>CareerLevel">
+				<actions>
+					<ObjectPageHeaderActionButton icon="sap-icon://action" text="action" tooltip="action"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://action-settings" text="settings" tooltip="action-settings"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://edit" text="edit" tooltip="edit"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://save" text="save" visible="false" tooltip="save"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://refresh" text="{buttons>/text}" tooltip="refresh"/>
+					<ObjectPageHeaderActionButton icon="{buttons>/icon}"
+												  text="{path:'/text', model:'buttons', formatter:'.onFormat'}" tooltip="chain-link"/>
+				</actions>
+				<breadcrumbs>
+					<m:Breadcrumbs>
+						<m:Link text="Page 2 long link" press="handleLink2Press"/>
+					</m:Breadcrumbs>
+				</breadcrumbs>
+			</ObjectPageHeader>
+        </content>
+    </Page>
+</mvc:View>
