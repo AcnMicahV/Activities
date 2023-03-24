@@ -2,27 +2,21 @@
     displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:sfb="sap.ui.comp.smartfilterbar">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Table id="idEmployeesTable" inset="false" mode="MultiSelect" class="sapUiResponsiveMargin" width="auto"
+            <Table id="idEmployeesTable" mode="MultiSelect" class="sapUiResponsiveMargin" width="auto"
                 items="{ path: 'EmployeesList>/Employee',
                          parameters: { 
-                             expand: 'CareerList, ProjectList'
+                             expand: 'CareerList,ProjectList'
                          },
 			             sorter: { path: 'EmployeeID' } }">
                 <headerToolbar>
-                    <OverflowToolbar>
-                        <Title text="Employees" level="H2" />
-                        <ToolbarSpacer />
-                        <SearchField ariaLabelledBy="text1" id="maxPrice" liveChange="onFilter">
-                            <layoutData>
-                                <OverflowToolbarLayoutData maxWidth="300px" shrinkable="true"
-                                    priority="NeverOverflow" />
-                            </layoutData>
-                        </SearchField>
-                        <Button id="AddBtn" text="Add" press="onAdd" />
-                        <Button id="DeleteBtn" text="Delete" 
-                                press="onDelete" ariaHasPopup="Dialog" />
-                        <ToolbarSpacer />
-                    </OverflowToolbar>
+                    <Toolbar>
+                            <Title text="Employees" level="H2"/>
+                            <ToolbarSpacer />
+                            <SearchField liveChange="onSearch" width="25%" />
+                            <Button type="Transparent" text="Add" enabled="true" press="onAdd" />
+                            <Button type="Reject" text="Delete" enabled="true" press="onDelete" ariaHasPopup="Dialog"/>
+                        </Toolbar>
+
                 </headerToolbar>
                 <columns>
                     <Column width="12em">
@@ -54,9 +48,14 @@
                             <Text text="{EmployeesList>FirstName}"/>
                             <Text text="{EmployeesList>LastName}" />
                             <Text text="{EmployeesList>Age}" />
-                            <Text text="{EmployeesList>DateHire}" />
+                            <Text text="{path: 'EmployeesList>DateHire',
+                                        type: 'sap.ui.model.type.DateTime',
+                                        formatOptions: { 
+                                        pattern: 'MMMM dd, yyyy' 
+                                         } }"
+                                   wrapping="false" />
                             <Text text="{EmployeesList>CareerList/CareerLevel}" />
-                            <Text text="{EmployeesList>ProjectList/ProjectID}" />
+                            <Text text="{EmployeesList>ProjectList/ProjectName}" />
                         </cells>
                     </ColumnListItem>
                 </items>

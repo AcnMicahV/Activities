@@ -1,102 +1,62 @@
 [
     {
-        "EmployeeID": "JrLkJwalZXppoCCHpODUwBnfIainTUGB",
-        "SkillID": "iMzVANQtGa",
-        "Proficiency": "KxxPUnqXep"
+        "EmployeeSkillID": "JJQABNWKNDGJKNSOKNDF",
+        "EmployeeID": "EMP2022264487",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "BNBcsPdmgMqlSJPUwVxQpylyrYCOLccK",
-        "SkillID": "oEZSaQIaIf",
-        "Proficiency": "sNVPgjeaow"
+        "EmployeeSkillID": "SNRGNMSKDFNGSMDF",
+        "EmployeeID": "EMP2022302443",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "SbNPAnrqbThymPMdNyNBQHKbEypvACgB",
-        "SkillID": "zAbspgweUE",
-        "Proficiency": "NOujMMDBWv"
+        "EmployeeSkillID": "CVMKFGMHORSTMOYHSERTY",
+        "EmployeeID": "EMP2022764814",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "qWdxzKbjEVaSabKWefbEYGByigIgJwnB",
-        "SkillID": "qcNaNDSXYP",
-        "Proficiency": "iBGEundREL"
+        "EmployeeSkillID": "MWERIOGMSKDFMBKDFBXD",
+        "EmployeeID": "EMP2022844624",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "pZCvajIlmqPXiOqppZedQRhLFkDJlNyG",
-        "SkillID": "BSXpDWUYHQ",
-        "Proficiency": "OpebJrTHtz"
+        "EmployeeSkillID": "W4JNTKSNMDKFGMDKFMDFG",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "rqXjvKewIPKGaKXZmdyDedamsJlkFazQ",
-        "SkillID": "oFAzdQbjTI",
-        "Proficiency": "lASTgRZNge"
+        "EmployeeSkillID": "BMLNDRMGRTY",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "fRkptcxmtIVBEfQLUugxwBKlMkrLEMol",
-        "SkillID": "dOVeDZqlOe",
-        "Proficiency": "HTiweQqoAt"
+        "EmployeeSkillID": "DFNBINRTUIHNERIG",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "MAdFCLCpPxJnLewaeParYEDXTyMYBosn",
-        "SkillID": "PDehjshRdZ",
-        "Proficiency": "zjmgKszjPj"
+        "EmployeeSkillID": "WEIRTUWIERTIWERT",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "QXavoTlBvxZhnScjHSnzaftTFyfGNWdF",
-        "SkillID": "QfjhIiEVTn",
-        "Proficiency": "zMaDbLpqDQ"
+        "EmployeeSkillID": "KGDFMHIISGHKOSKGSDFTG",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     },
     {
-        "EmployeeID": "rBWznDphZoutnCkgVnWraPtLhHEJRppT",
-        "SkillID": "ogClnYToGz",
-        "Proficiency": "zBDjkJmhZH"
-    },
-    {
-        "EmployeeID": "TSZKbDhDSmhFhCbkukImLXxFJfqncstC",
-        "SkillID": "cxvwmNFXWH",
-        "Proficiency": "BWfBGIAauc"
-    },
-    {
-        "EmployeeID": "lwgcHAUOLVEBbyjCxsytRryCaxqtccaN",
-        "SkillID": "vXqiYMLDEK",
-        "Proficiency": "FLOrqrHeKk"
-    },
-    {
-        "EmployeeID": "PXeEJoJjDRUzfjtSFdtEwYiqaNLkucym",
-        "SkillID": "INecQIMTRd",
-        "Proficiency": "sdVdLXWCln"
-    },
-    {
-        "EmployeeID": "IgXSmntLRrgyBInvJWiZgtucjXbhpPQl",
-        "SkillID": "cMOgIKTiFP",
-        "Proficiency": "IQGvajLrnk"
-    },
-    {
-        "EmployeeID": "nRROsSxjHhTzPFuSrMoADLhoMayGtYkM",
-        "SkillID": "tiKCaYWoWI",
-        "Proficiency": "TmfbLGlIrg"
-    },
-    {
-        "EmployeeID": "ctEYkILpFYbADRXyMEPecIXVsuBotilc",
-        "SkillID": "nBsibIXyYM",
-        "Proficiency": "jqtpwsnblk"
-    },
-    {
-        "EmployeeID": "GUQvpUtKjsIeOzoZgDlbatdsFasZdDzQ",
-        "SkillID": "IhhGWDmRRD",
-        "Proficiency": "tzevCMSCAP"
-    },
-    {
-        "EmployeeID": "NRtfOCJISHlnKUAvXNqVMoUDcgLbaONg",
-        "SkillID": "INFeQyUaqK",
-        "Proficiency": "OuikfxWfBw"
-    },
-    {
-        "EmployeeID": "sdQqSYMUSSkoxBGWHOWDSXpknZazdUJb",
-        "SkillID": "awLWjiVVTH",
-        "Proficiency": "oxVccqosME"
-    },
-    {
-        "EmployeeID": "DSCXIBbGsXZoiCGXDUUTXmmDINgIXyQB",
-        "SkillID": "jAKNrCoKJP",
-        "Proficiency": "jRghQtNvRQ"
+        "EmployeeSkillID": "IE5ITOJRITYJIERTJYI",
+        "EmployeeID": "EMP2022782401",
+        "SkillID": "DnLMTNAfsF",
+        "Proficiency": "UPpWRkiXKU"
     }
 ]

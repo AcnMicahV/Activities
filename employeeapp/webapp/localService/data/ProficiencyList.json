@@ -1,82 +1,22 @@
 [
     {
-        "ProficiencyID": "KxxPUnqXep",
+        "ProficiencyID": "UPpWRkiXKU",
         "ProficiencyLevel": "P1"
     },
     {
-        "ProficiencyID": "sNVPgjeaow",
+        "ProficiencyID": "cAxkhJWkrR",
         "ProficiencyLevel": "P2"
     },
     {
-        "ProficiencyID": "NOujMMDBWv",
+        "ProficiencyID": "LHqkTlYoCz",
         "ProficiencyLevel": "P3"
     },
     {
-        "ProficiencyID": "iBGEundREL",
+        "ProficiencyID": "WwcgarFStV",
         "ProficiencyLevel": "P4"
     },
     {
-        "ProficiencyID": "OpebJrTHtz",
+        "ProficiencyID": "zGvyBZhsEY",
         "ProficiencyLevel": "P5"
-    },
-    {
-        "ProficiencyID": "lASTgRZNge",
-        "ProficiencyLevel": "P6"
-    },
-    {
-        "ProficiencyID": "HTiweQqoAt",
-        "ProficiencyLevel": "P7"
-    },
-    {
-        "ProficiencyID": "zjmgKszjPj",
-        "ProficiencyLevel": "P8"
-    },
-    {
-        "ProficiencyID": "zMaDbLpqDQ",
-        "ProficiencyLevel": "P9"
-    },
-    {
-        "ProficiencyID": "zBDjkJmhZH",
-        "ProficiencyLevel": "10"
-    },
-    {
-        "ProficiencyID": "BWfBGIAauc",
-        "ProficiencyLevel": "11"
-    },
-    {
-        "ProficiencyID": "FLOrqrHeKk",
-        "ProficiencyLevel": "12"
-    },
-    {
-        "ProficiencyID": "sdVdLXWCln",
-        "ProficiencyLevel": "13"
-    },
-    {
-        "ProficiencyID": "IQGvajLrnk",
-        "ProficiencyLevel": "14"
-    },
-    {
-        "ProficiencyID": "TmfbLGlIrg",
-        "ProficiencyLevel": "15"
-    },
-    {
-        "ProficiencyID": "jqtpwsnblk",
-        "ProficiencyLevel": "16"
-    },
-    {
-        "ProficiencyID": "tzevCMSCAP",
-        "ProficiencyLevel": "17"
-    },
-    {
-        "ProficiencyID": "OuikfxWfBw",
-        "ProficiencyLevel": "18"
-    },
-    {
-        "ProficiencyID": "oxVccqosME",
-        "ProficiencyLevel": "19"
-    },
-    {
-        "ProficiencyID": "jRghQtNvRQ",
-        "ProficiencyLevel": "20"
     }
 ]
